@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Architecture|Contacts</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="css/img/favicon.png" type="image/x-icon">
+  <!--CSS-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/hamburgers.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!--JS-->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header_wrapper">
+      <div class="wrapper">
+        <a class="logo_link" href="index.html">
+          <!--<img src="" alt="">-->
+          <span>LOGO</span>
+        </a>
+      </div>
+      <nav class="header_menu">
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div class="nav_box">
+          <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="prices.html">Prices</a></li>
+            <li><a class="active" href="contacts.html">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="prices">
+      <div class="wrapper">
+        <h1>Contacts</h1>
+        <span class="title_info">help your imagination get visualised.</span>
+        <div class="location_box">
+          <div class="location_item">
+            <div class="location_map wow fadeInLeft" id="map-1">
+
+            </div>
+            <div class="location_info wow fadeInRight">
+              <h4>location 1</h4>
+              <span class="location">4 apt. Flawing Street. The Grand Avenue. Liverpool,</span>
+              <span class="post">uk 33342</span>
+              <span class="phone">Tel : <a href="tel:+44-20-2355-3456">+44-20-2355-3456</a></span>
+              <span class="email">Email : <a href="mailto:london@infinitewp.com">London@InfiniteWP.com</a></span>
+            </div>
+          </div>
+          <div class="location_item">
+            <div class="location_map wow fadeInLeft" id="map-2">
+
+            </div>
+            <div class="location_info wow fadeInRight">
+              <h4>location 2</h4>
+              <span class="location">4 apt. Flawing Street. The Grand Avenue. Liverpool,</span>
+              <span class="post">uk 33342</span>
+              <span class="phone">Tel : <a href="tel:+44-20-2355-3456">+44-20-2355-3456</a></span>
+              <span class="email">Email : <a href="mailto:london@infinitewp.com">London@InfiniteWP.com</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="contacts" style="background-image: url(css/img/footer-image.jpg)">
+    <div class="overlay">
+      <div class="wrapper">
+        <section class="contact_box">
+          <div class="contact_us_box wow fadeInLeft" data-wow-delay="0.2s">
+            <h4>Work with Us</h4>
+            <form action="#" method="post">
+              <input type="text" name="First Name" placeholder="First Name">
+              <input type="text" name="Second Name" placeholder="Second Name">
+              <input type="email" name="Email" placeholder="Email">
+              <textarea rows="10" cols="45" name="text" placeholder="Your message"></textarea>
+              <input type="submit" value="submit">
+            </form>
+          </div>
+          <div class="contact_address_box wow fadeInRight" data-wow-delay="0.2s">
+            <div class="address_item">
+              <h4>Contact US</h4>
+              <ul class="message_box">
+                <li><a href="#"><span class="architect-viber"></span></a></li>
+                <li><a href="#"><span class="architect-watsapp"></span></a></li>
+                <li><a href="#"><span class="architect-telega"></span></a></li>
+                <li><a href="#"><span class="architect-skype"></span></a></li>
+              </ul>
+            </div>
+            <div class="address_item">
+              <h5 class="s_m">SOCIAL MEDIA</h5>
+              <ul class="social_box">
+                <li>
+                  <a href="#">
+                    <span class="architect-in"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="architect-pinterest"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="architect-insta"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="architect-facebook"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a href="tel:+37378524626" class="main_tel">
+              <span class="architect-phone"></span>
+              <span>+373 78524626</span>
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="rights">
+      <div class="wrapper">
+        <span>
+          Copyright  © 2018
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function initMap() {
+      var element1 = document.getElementById('map-1');
+      var options1 = {
+        zoom: 5,
+        center: {lat:53.41058,lng:-2.97794}
+      };
+      var myMap1 = new google.maps.Map(element1, options1);
+      var marker1 = new google.maps.Marker({
+        position: {lat:53.41058,lng:-2.97794},
+        map: myMap1
+      });
+      var InfoWindow1 = new google.maps.InfoWindow({
+        content: '<h4>We here!</h4>'
+      });
+      marker1.addListener('click', function () {
+        InfoWindow1.open(myMap1, marker1);
+      });
+
+
+      var element2 = document.getElementById('map-2');
+      var options2 = {
+        zoom: 5,
+        center: {lat:53.41058,lng:-2.97794}
+      };
+      var myMap2 = new google.maps.Map(element2, options2);
+      var marker2 = new google.maps.Marker({
+        position: {lat:53.41058,lng:-2.97794},
+        map: myMap2
+      });
+      var InfoWindow2 = new google.maps.InfoWindow({
+        content: '<h4>We here!</h4>'
+      });
+      marker2.addListener('click', function () {
+        InfoWindow1.open(myMap2, marker2);
+      });
+    }
+  </script>
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2Hw6Y8OoSnHbcur5CGtVFZtVavZqlz0w&callback=initMap">
+  </script>
+</body>
+</html>
